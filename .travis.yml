@@ -5,5 +5,5 @@ install:
 - npm install
 script:
 - npm run prettier-check
-- npm run lint-check
+- npm run eslint-check
 - npm run tsc-check
