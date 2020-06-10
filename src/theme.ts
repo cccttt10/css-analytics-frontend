@@ -1,7 +1,7 @@
 export default {
     fonts: {
-        body: '-apple-system, BlinkMacSystemFont, sans-serif',
-        heading: '-apple-system, BlinkMacSystemFont, sans-serif',
+        body: 'Futura, -apple-system, BlinkMacSystemFont, sans-serif',
+        heading: 'Futura, -apple-system, BlinkMacSystemFont, sans-serif',
     },
     space: [0, 4, 8, 16, 32, 64, 128, 256],
     fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72, 96],

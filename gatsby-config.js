@@ -4,6 +4,14 @@ module.exports = {
         description: 'CSS Analytics'
     },
     plugins: [
+        {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+                google: {
+                    families: [ 'Futura' ]
+                }
+            }
+        },
         'gatsby-plugin-theme-ui',
         {
             resolve: 'gatsby-plugin-typescript',

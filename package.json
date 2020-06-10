@@ -21,6 +21,7 @@
         "gatsby-plugin-mdx": "^1.2.15",
         "gatsby-plugin-theme-ui": "^0.2.18",
         "gatsby-plugin-typescript": "^2.4.6",
+        "gatsby-plugin-web-font-loader": "^1.0.4",
         "gatsby-source-filesystem": "^2.1.6",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
