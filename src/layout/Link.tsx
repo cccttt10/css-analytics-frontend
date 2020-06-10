@@ -6,7 +6,7 @@ import { jsx, Styled } from 'theme-ui';
 interface LinkProps {
     href: string;
 }
-const Link: React.FC<LinkProps> = ({ href, ...props }: LinkProps) => (
+const Link: React.FC<LinkProps> = ({ href, ...props }) => (
     <Styled.a as={GatsbyLink} href={href} {...props} />
 );
 

@@ -6,10 +6,7 @@ interface LabelProps {
     display: string;
 }
 
-const Label: React.FC<LabelProps> = ({
-    display = 'block',
-    ...props
-}: LabelProps) => (
+const Label: React.FC<LabelProps> = ({ display = 'block', ...props }) => (
     <label
         sx={{
             display,

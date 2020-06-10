@@ -2,7 +2,11 @@
 import React from 'react';
 import { jsx } from 'theme-ui';
 
-const Input: React.FC = ({ ...props }) => (
+type InputProps = React.DetailedHTMLProps<
+    React.InputHTMLAttributes<HTMLInputElement>,
+    HTMLInputElement
+>;
+const Input: React.FC<InputProps> = ({ ...props }) => (
     <input
         sx={{
             fontSize: 2,

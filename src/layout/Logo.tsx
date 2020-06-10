@@ -1,11 +1,11 @@
 import React from 'react';
 
 interface LogoProps {
-    size: string;
-    color: string;
+    size: number;
+    color?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ size, color }: LogoProps) => (
+const Logo: React.FC<LogoProps> = ({ size, color }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
