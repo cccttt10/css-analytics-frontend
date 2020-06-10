@@ -32,6 +32,7 @@ module.exports = {
         'no-var': 'error',
         'react/boolean-prop-naming': 'error',
         'react/jsx-key': 'error',
+        'react/no-children-prop': 'off',
         'react/no-unused-prop-types': 'error',
         'react/no-unused-state': 'error',
         'react/prefer-stateless-function': 'error',
