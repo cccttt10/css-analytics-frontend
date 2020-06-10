@@ -7,3 +7,4 @@ script:
 - npm run prettier-check
 - npm run eslint-check
 - npm run tsc-check
+- npm run build

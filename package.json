@@ -14,10 +14,14 @@
     "dependencies": {
         "@emotion/core": "^10.0.28",
         "@emotion/styled": "^10.0.27",
+        "@mdx-js/mdx": "^1.6.5",
+        "@mdx-js/react": "^1.6.5",
         "axios": "^0.19.2",
-        "gatsby": "^2.23.3",
-        "gatsby-plugin-theme-ui": "^0.3.0",
+        "gatsby": "^2.13.41",
+        "gatsby-plugin-mdx": "^1.2.15",
+        "gatsby-plugin-theme-ui": "^0.2.18",
         "gatsby-plugin-typescript": "^2.4.6",
+        "gatsby-source-filesystem": "^2.1.6",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-feather": "^2.0.8",
@@ -53,10 +57,10 @@
         "eslint-check": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx}\"",
         "eslint-fix": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx}\" --fix",
         "fix": "npm run prettier-fix && npm run eslint-fix",
-        "prettier-check": "prettier --config ./.prettierrc.json --check \"./src/**/*.{tx,tsx}\"",
-        "prettier-fix": "prettier --config ./.prettierrc.json --write \"./src/**/*.{ts,tsx}\"",
-        "tsc-check": "tsc --noEmit",
-        "start": "cross-env PORT=8000 gatsby start"
+        "prettier-check": "prettier --config ./.prettierrc.json --check \"./src/**/*.{tx,tsx,mdx}\"",
+        "prettier-fix": "prettier --config ./.prettierrc.json --write \"./src/**/*.{ts,tsx,mdx}\"",
+        "start": "cross-env PORT=8000 gatsby develop",
+        "tsc-check": "tsc --noEmit"
     },
     "version": "0.1.0"
 }
