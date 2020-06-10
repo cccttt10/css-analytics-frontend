@@ -3,7 +3,7 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 
 interface LabelProps {
-    display: string;
+    display?: string;
 }
 
 const Label: React.FC<LabelProps> = ({ display = 'block', ...props }) => (
