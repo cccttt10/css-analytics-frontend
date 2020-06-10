@@ -12,11 +12,12 @@
         ]
     },
     "dependencies": {
-        "@emotion/core": "^10.0.28",
-        "@emotion/styled": "^10.0.27",
+        "@emotion/core": "^10.0.14",
+        "@emotion/styled": "^10.0.14",
         "@mdx-js/mdx": "^1.6.5",
         "@mdx-js/react": "^1.6.5",
         "axios": "^0.19.2",
+        "csstype": "^2.6.10",
         "gatsby": "^2.13.41",
         "gatsby-plugin-mdx": "^1.2.15",
         "gatsby-plugin-theme-ui": "^0.2.18",
@@ -27,6 +28,7 @@
         "react-dom": "^16.13.1",
         "react-feather": "^2.0.8",
         "react-helmet": "^6.1.0",
+        "styled-system": "^5.0.16",
         "theme-ui": "^0.2.18"
     },
     "devDependencies": {
@@ -35,6 +37,7 @@
         "@types/react": "^16.9.0",
         "@types/react-dom": "^16.9.0",
         "@types/react-helmet": "^6.0.0",
+        "@types/styled-system": "^5.1.9",
         "@types/theme-ui": "^0.2.8",
         "@typescript-eslint/eslint-plugin": "^3.2.0",
         "@typescript-eslint/parser": "^3.2.0",
@@ -55,11 +58,11 @@
     "scripts": {
         "build": "gatsby build",
         "check": "npm run prettier-check && npm run eslint-check && npm run tsc-check",
-        "eslint-check": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx}\"",
-        "eslint-fix": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx}\" --fix",
+        "eslint-check": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx,js,jsx}\"",
+        "eslint-fix": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx,js,jsx}\" --fix",
         "fix": "npm run prettier-fix && npm run eslint-fix",
-        "prettier-check": "prettier --config ./.prettierrc.json --check \"./src/**/*.{tx,tsx,mdx}\"",
-        "prettier-fix": "prettier --config ./.prettierrc.json --write \"./src/**/*.{ts,tsx,mdx}\"",
+        "prettier-check": "prettier --config ./.prettierrc.json --check \"./src/**/*.{tx,tsx,js,jsx,mdx}\"",
+        "prettier-fix": "prettier --config ./.prettierrc.json --write \"./src/**/*.{ts,tsx,js,jsx,mdx}\"",
         "start": "cross-env PORT=8000 gatsby develop",
         "tsc-check": "tsc --noEmit"
     },
