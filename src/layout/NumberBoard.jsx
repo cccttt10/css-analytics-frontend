@@ -15,7 +15,7 @@ const SlabStat = props => (
             }}
             children={props.title}
         />
-        <Dd mb={0} fontSize={6} fontWeight="bold" children={props.stat} />
+        <Dd mb={0} fontSize={6} fontWeight="bold" children={props.analytics} />
     </Dl>
 );
 

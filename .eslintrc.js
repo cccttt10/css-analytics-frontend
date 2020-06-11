@@ -19,6 +19,10 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'warn',
         '@typescript-eslint/no-empty-interface': 'off',
         '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-unused-vars': ['error', {
+            'argsIgnorePattern': '^(props)$',
+            'varsIgnorePattern': 'React'
+        }],
         '@typescript-eslint/no-use-before-define': 'error',
         'camelcase': 'error',
         'eqeqeq': 'error',
