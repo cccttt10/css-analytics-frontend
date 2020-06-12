@@ -68,7 +68,7 @@
     "name": "css-analytics-frontend",
     "private": true,
     "scripts": {
-        "build": "gatsby build",
+        "build": "npm run check && gatsby build",
         "check": "npm run prettier-check && npm run eslint-check && npm run tsc-check",
         "eslint-check": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx,js,jsx}\"",
         "eslint-fix": "eslint --no-error-on-unmatched-pattern \"src/**/*.{ts,tsx,js,jsx}\" --fix",
