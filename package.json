@@ -65,7 +65,6 @@
     "eslintConfig": {
         "extends": "react-app"
     },
-    "name": "css-analytics-frontend",
     "private": true,
     "scripts": {
         "build": "npm run check && gatsby build",
