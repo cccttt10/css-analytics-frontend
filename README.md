@@ -5,6 +5,8 @@
 
 This repo contains the front end source code of the CSS Analytics project. The back end repo is [here](https://github.com/chuntonggao/css-analytics-backend).
 
+The CSS Analytics website is live here: [https://css-analytics.netlify.app/](https://css-analytics.netlify.app/).
+
 ## CLI
 
 - `npm install`: Install dependencies.
