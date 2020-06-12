@@ -65,10 +65,6 @@ const AnalyticsPage: React.FC = () => {
                         </Styled.a>
                     </H2>
                 </Flex>
-                {/* <H2 sx={{ my: 0, pl: 3 }}>
-                    Downloading and analyzing CSS from{' '}
-                    <Styled.a href={isUrl(url) ? url : '//' + url}>{url}</Styled.a>
-                </H2> */}
             </Layout>
         );
     }

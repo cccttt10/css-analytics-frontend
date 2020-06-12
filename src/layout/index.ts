@@ -72,7 +72,10 @@ export const Container: React.FC<BasicProps> = _Container;
 
 export const Dd: React.FC<BasicProps> = _Dd;
 
-export const Div: React.FC<BasicProps> = _Div;
+interface DivProps extends BasicProps {
+    width?: number[];
+}
+export const Div: React.FC<DivProps> = _Div;
 
 export const Dl: React.FC<BasicProps> = _Dl;
 

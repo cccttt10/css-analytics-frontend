@@ -5,7 +5,7 @@ export default {
     },
     space: [0, 4, 8, 16, 32, 64, 128, 256],
     fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72, 96],
-    initialColorMode: 'light',
+    initialColorMode: 'dark',
     colors: {
         black: '#000',
         text: '#000',
