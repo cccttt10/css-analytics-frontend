@@ -22,22 +22,17 @@ const SpecificityGraph: React.FC<SpecificityGraphProps> = ({
     average,
     max,
 }) => (
-    <Div>
+    <Div py={[2, 3, 4]}>
         <SectionTitle title="Specificity" />
-        <Flex alignItems="top" sx={{ my: 3 }} wrap={['wrap', 'wrap', 'nowrap']}>
-            <NumberBoard
-                sx={{ mr: 5 }}
-                title="Average score"
-                analytics={`${average}`}
-            />
-            <NumberBoard sx={{ mr: 5 }} title="Max score" analytics={`${max}`} />
-            <Text sx={{ mt: 0, width: 1 }} style={{ lineHeight: 1.5 }}>
-                Base 10 specificity score for each selector by source order.
-                Generally, lower scores and flatter curves are better for
+        <Flex alignItems="top" my={3} wrap={['wrap', 'wrap', 'nowrap']}>
+            <NumberBoard mr={5} title="Average score" analytics={`${average}`} />
+            <NumberBoard mr={5} title="Max score" analytics={`${max}`} />
+            <Text mt={0} width={1} style={{ lineHeight: 1.5 }}>
+                Generally, lower specificity scores and flatter curves mean better
                 maintainability.
                 <Link
-                    sx={{ ml: 2 }}
-                    href="https://csswizardry.com/2014/10/the-specificity-graph/"
+                    ml={2}
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
                 >
                     Learn More
                 </Link>

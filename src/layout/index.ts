@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import CSS from 'csstype';
 import { GraphData } from 'global';
-import React from 'react';
+import React, { ReactText } from 'react';
 
 import _BackgroundColor from './BackgroundColor';
 import _BarGraph from './BarGraph';
@@ -40,6 +40,11 @@ import _TextCenter from './TextCenter';
 interface BasicProps {
     style?: React.CSSProperties;
     id?: string;
+    my?: number;
+    mr?: number;
+    mt?: number;
+    ml?: number;
+    py?: number[];
 }
 
 interface GraphProps extends BasicProps {
@@ -73,7 +78,7 @@ export const Container: React.FC<BasicProps> = _Container;
 export const Dd: React.FC<BasicProps> = _Dd;
 
 interface DivProps extends BasicProps {
-    width?: number[];
+    width?: CSS.WidthProperty<number> | CSS.WidthProperty<number>[];
 }
 export const Div: React.FC<DivProps> = _Div;
 
@@ -164,6 +169,7 @@ export const Svg: React.FC<BasicProps> = _Svg;
 interface TextProps extends BasicProps {
     uppercase?: boolean;
     inline?: boolean;
+    width?: CSS.WidthProperty<number> | CSS.WidthProperty<number>[];
 }
 export const Text: React.FC<TextProps> = _Text;
 

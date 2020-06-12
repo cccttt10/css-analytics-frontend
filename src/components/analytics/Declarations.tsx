@@ -177,8 +177,8 @@ const Declarations: React.FC<DeclarationsProps> = ({ properties }) => {
                 children="Total Declaration Counts"
             />
             <p sx={{ fontSize: 1, mt: 0, opacity: 0.7, lineHeight: 1.5 }}>
-                A declaration represents a property value pair. e.g. display: block
-                would represent 1 declaration
+                A declaration represents a property value pair. For example, &quot;
+                display: none &quot; represents 1 declaration.
             </p>
 
             <h3

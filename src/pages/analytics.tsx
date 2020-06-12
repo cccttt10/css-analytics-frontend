@@ -392,7 +392,7 @@ const AnalyticsPage: React.FC = () => {
             <DeclarationsChartPadding data={declarations} />
             <DeclarationsChartMargin data={declarations} />
             <Div sx={{ mt: 5 }}>
-                <H2>Raw Css</H2>
+                <H2>Raw CSS</H2>
                 <Pre>{css.trim()}</Pre>
             </Div>
         </Layout>

@@ -9,7 +9,7 @@ interface ZIndicesProps {
 }
 
 const ZIndices: React.FC<ZIndicesProps> = ({ zIndices = [] }) => (
-    <Div sx={{ py: [4, 5, 6] }}>
+    <Div py={[2, 3, 4]}>
         <SectionTitle
             title={`${uniq(zIndices).length} Unique Z Indices`}
             description={`${zIndices.length} total`}

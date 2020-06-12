@@ -27,7 +27,7 @@ const SpacingResets: React.FC<SpacingResetsProps> = ({ properties }) => {
         <Div sx={{ py: [3, 4, 5] }}>
             <H2 sx={{ mb: 3 }} children="Spacing Resets" />
             <p sx={{ fontSize: 0, mt: 0 }}>
-                Amount of times each property has been set to 0
+                The number of times each property is set to 0
             </p>
 
             <Flex

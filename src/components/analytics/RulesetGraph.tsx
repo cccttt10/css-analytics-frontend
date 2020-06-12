@@ -8,7 +8,7 @@ interface RulesetGraphProps {
 }
 
 const RulesetChart: React.FC<RulesetGraphProps> = ({ data }) => (
-    <Div sx={{ mt: 4 }}>
+    <Div mt={4} py={[2, 3, 4]}>
         <SectionTitle
             title="Ruleset Size"
             description="Number of declarations per ruleset"

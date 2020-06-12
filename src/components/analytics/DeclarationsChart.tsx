@@ -31,7 +31,7 @@ const DeclarationsChart: React.FC<DeclarationsChartProps> = ({ data }) => {
     ];
 
     return (
-        <Div sx={{ mt: 4 }}>
+        <Div mt={4}>
             <SectionTitle
                 title="Total vs Unique Declarations"
                 description={`${total} total, ${unique} unique`}

@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 module.exports = {
     siteMetadata: {
         title: 'CSS Analytics',
@@ -26,6 +27,16 @@ module.exports = {
             options: {
                 name: 'pages',
                 path: `${__dirname}/src/pages/`
+            }
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-prismjs`
+                    }
+                ]
             }
         },
         'gatsby-plugin-mdx'

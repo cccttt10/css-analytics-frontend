@@ -35,7 +35,7 @@ const DeclarationsChartLayout: React.FC<DeclarationsChartLayoutProps> = ({
     ];
 
     return (
-        <Div sx={{ pt: [4, 5, 6] }}>
+        <Div sx={{ mt: 4 }}>
             <SectionTitle
                 title="Total vs Unique Declarations"
                 description={
@@ -44,11 +44,9 @@ const DeclarationsChartLayout: React.FC<DeclarationsChartLayoutProps> = ({
                         have unique values.
                     </span>
                 }
+                py={[1, 2, 3]}
             />
-            <p>
-                The comparison charts below can help you identify which properties
-                might be the best candidates for creating abstractions.
-            </p>
+
             <SectionTitle title="Layout and Structure" />
             <BarGraph data={formattedData} />
         </Div>
