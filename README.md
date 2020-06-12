@@ -1,4 +1,4 @@
-# CSS Analytics
+# CSS Analytics Front End
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/adc6023e-387f-4593-a560-2078e2254c68/deploy-status)](https://app.netlify.com/sites/css-analytics/deploys) [![Build Status](https://travis-ci.com/chuntonggao/css-analytics-frontend.svg?branch=master)](https://travis-ci.com/chuntonggao/css-analytics-frontend)
 
