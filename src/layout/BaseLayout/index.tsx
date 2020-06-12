@@ -10,9 +10,9 @@ import Link from './Link';
 import Logo from './Logo';
 
 interface BaseLayoutProps {
-    title: string;
+    title?: string;
     initialUrl: string;
-    onUrlChange: (url: string) => void;
+    onUrlChange?: (url: string) => void;
 }
 
 const BaseLayout: React.FC<BaseLayoutProps> = ({
@@ -75,7 +75,9 @@ const BaseLayout: React.FC<BaseLayoutProps> = ({
                                 <form
                                     onSubmit={(e): void => {
                                         e.preventDefault();
-                                        onUrlChange(url);
+                                        if (onUrlChange) {
+                                            onUrlChange(url);
+                                        }
                                     }}
                                 >
                                     <Label display="none">Url</Label>
@@ -120,7 +122,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = ({
                         </div>
                     </div>
                 </Header>
-                <title children={title || 'CSS Stats'} />
+                <title children={title || 'CSS Analytics'} />
                 <Container sx={{ maxWidth: '72rem' }}>{children}</Container>
             </Styled.root>
         </div>

@@ -23,15 +23,15 @@ const Footer = props => (
                 <Link
                     fontWeight="bold"
                     color="black"
-                    href="https://github.com/cssstats/cssstats/issues"
-                    children="Issues"
+                    href="https://github.com/chuntonggao/css-analytics-frontend"
+                    children="Front End"
                 />
                 <Link
                     ml={2}
                     fontWeight="bold"
                     color="black"
-                    href="https://github.com/cssstats/cssstats"
-                    children="GitHub"
+                    href="https://github.com/chuntonggao/css-analytics-backend"
+                    children="Back End"
                 />
             </Div>
         </Flex>

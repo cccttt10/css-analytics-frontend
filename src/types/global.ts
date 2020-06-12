@@ -102,8 +102,18 @@ declare module 'global' {
         mediaQueries: MediaQueries;
     }
 
-    type GraphData = {
-        x: string;
-        y: number;
-    }[][];
+    interface Response {
+        analytics: Analytics;
+        css: {
+            css: string;
+            pageTitle: string;
+        };
+    }
+
+    type GraphData =
+        | {
+              x: string;
+              y: number;
+          }[][]
+        | number[];
 }

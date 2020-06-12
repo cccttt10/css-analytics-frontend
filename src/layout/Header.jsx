@@ -10,13 +10,12 @@ const Header = props => (
             fontSize={3}
             fontWeight="bold"
             color="black"
-            children="Css Stats"
+            children="Css Analytics"
         />
-
         <Link
             fontWeight="bold"
             color="black"
-            href="https://github.com/cssstats/cssstats"
+            href="https://github.com/chuntonggao/css-analytics-frontend"
             children="GitHub"
         />
     </Flex>

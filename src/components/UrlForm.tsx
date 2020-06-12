@@ -15,7 +15,7 @@ const UrlForm: React.FC<UrlFormsProps> = ({ showLabel = false }) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
-        navigate(`/stats?url=${encodeURIComponent(url)}`);
+        navigate(`/analytics?url=${encodeURIComponent(url)}`);
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void =>
