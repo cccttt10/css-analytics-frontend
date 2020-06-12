@@ -3,7 +3,7 @@ import { intComma } from 'humanize-plus';
 import uniq from 'lodash.uniq';
 import React from 'react';
 
-import { BarChart, Div, SectionTitle } from '../../layout/';
+import { BarGraph, Div, SectionTitle } from '../../layout/';
 
 interface DeclarationsChartLayoutProps {
     data: Declarations;
@@ -50,7 +50,7 @@ const DeclarationsChartLayout: React.FC<DeclarationsChartLayoutProps> = ({
                 might be the best candidates for creating abstractions.
             </p>
             <SectionTitle title="Layout and Structure" />
-            <BarChart data={formattedData} />
+            <BarGraph data={formattedData} />
         </Div>
     );
 };

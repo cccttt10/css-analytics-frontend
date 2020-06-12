@@ -4,7 +4,7 @@ import { VictoryAxis, VictoryBar, VictoryChart } from 'victory';
 
 const getMax = data => data.reduce((p, v) => (p > v ? p : v), 0);
 
-const LineChart = ({ data }) => {
+const LineGraph = ({ data }) => {
     const { theme } = useThemeUI();
     const { colors } = theme;
     const max = getMax(data);
@@ -50,4 +50,4 @@ const LineChart = ({ data }) => {
     );
 };
 
-export default LineChart;
+export default LineGraph;

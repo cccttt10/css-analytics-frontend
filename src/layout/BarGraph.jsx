@@ -11,7 +11,7 @@ import {
 
 const getMax = data => data[0].reduce((p, { y }) => (p > y ? p : y), 0);
 
-const BarChart = ({ data }) => {
+const BarGraph = ({ data }) => {
     const { theme } = useThemeUI();
     const { colors } = theme;
     const max = getMax(data);
@@ -86,4 +86,4 @@ const BarChart = ({ data }) => {
     );
 };
 
-export default BarChart;
+export default BarGraph;

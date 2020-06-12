@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import CSS from 'csstype';
+import { GraphData } from 'global';
 import React from 'react';
 
 interface BasicProps {
@@ -7,11 +8,8 @@ interface BasicProps {
     id?: string;
 }
 
-interface ChartProps extends BasicProps {
-    data: {
-        x: string;
-        y: number;
-    }[][];
+interface GraphProps extends BasicProps {
+    data: GraphData;
 }
 
 interface BackgroundColorProps extends BasicProps {
@@ -19,7 +17,7 @@ interface BackgroundColorProps extends BasicProps {
 }
 export const BackgroundColor: React.FC<BackgroundColorProps> = require('./BackgroundColor');
 
-export const BarChart: React.FC<ChartProps> = require('./BarChart');
+export const BarGraph: React.FC<GraphProps> = require('./BarGraph');
 
 interface BigNumberBoardProps extends BasicProps {
     title: string;
@@ -56,7 +54,7 @@ interface FlexProps extends BasicProps {
     flow?: CSS.FlexFlowProperty;
     grow?: CSS.FlexGrowProperty;
     shrink?: CSS.FlexShrinkProperty;
-    wrap?: CSS.FlexWrapProperty;
+    wrap?: CSS.FlexWrapProperty | CSS.FlexWrapProperty[];
     justify?: CSS.JustifyContentProperty;
     order?: CSS.OrderProperty;
 }
@@ -80,11 +78,12 @@ export const Input: React.FC<BasicProps> = require('./Input');
 
 export const Label: React.FC<BasicProps> = require('./Label');
 
-export const LineChart: React.FC<ChartProps> = require('./LineChart');
+export const LineGraph: React.FC<GraphProps> = require('./LineGraph');
 
 interface LinkProps extends BasicProps {
-    display: CSS.DisplayProperty;
-    fontWeight: CSS.FontWeightProperty;
+    display?: CSS.DisplayProperty;
+    fontWeight?: CSS.FontWeightProperty;
+    href: string;
 }
 export const Link: React.FC<LinkProps> = require('./Link');
 
@@ -108,8 +107,6 @@ interface NumberBoardProps extends BasicProps {
 export const NumberBoard: React.FC<NumberBoardProps> = require('./NumberBoard');
 
 export const Pre: React.FC<BasicProps> = require('./Pre');
-
-export const RulesChart: React.FC<ChartProps> = require('./RulesChart');
 
 interface SectionTitleProps extends BasicProps {
     title: string;

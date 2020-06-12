@@ -2,7 +2,7 @@ import { Declarations } from 'global';
 import uniq from 'lodash.uniq';
 import React from 'react';
 
-import { BarChart, Div, SectionTitle } from '../../layout';
+import { BarGraph, Div, SectionTitle } from '../../layout';
 
 interface DeclarationsChartSpacingProps {
     data: Declarations;
@@ -30,7 +30,7 @@ const DeclarationsChartPadding: React.FC<DeclarationsChartSpacingProps> = ({
     return (
         <Div sx={{ mt: 4 }}>
             <SectionTitle title="Padding" />
-            <BarChart data={formattedData} />
+            <BarGraph data={formattedData} />
         </Div>
     );
 };

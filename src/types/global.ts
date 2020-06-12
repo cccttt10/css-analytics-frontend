@@ -101,4 +101,9 @@ declare module 'global' {
         declarations: Declarations;
         mediaQueries: MediaQueries;
     }
+
+    type GraphData = {
+        x: string;
+        y: number;
+    }[][];
 }

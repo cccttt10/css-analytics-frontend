@@ -3,7 +3,7 @@ import { intComma } from 'humanize-plus';
 import uniq from 'lodash.uniq';
 import React from 'react';
 
-import { BarChart, Div, SectionTitle } from '../../layout/';
+import { BarGraph, Div, SectionTitle } from '../../layout/';
 
 interface DeclarationsChartProps {
     data: Declarations;
@@ -37,7 +37,7 @@ const DeclarationsChart: React.FC<DeclarationsChartProps> = ({ data }) => {
                 description={`${total} total, ${unique} unique`}
             />
 
-            <BarChart data={formattedData} />
+            <BarGraph data={formattedData} />
         </Div>
     );
 };
