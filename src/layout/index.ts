@@ -1,27 +1,28 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import CSS from 'csstype';
-import React, { CSSProperties } from 'react';
+import React from 'react';
 
 interface BasicProps {
-    style?: CSSProperties;
+    style?: React.CSSProperties;
     id?: string;
 }
 
-interface BackgroundColorProps extends BasicProps {
-    color: string;
-}
-
-interface BarChartProps extends BasicProps {
+interface ChartProps extends BasicProps {
     data: {
         x: string;
         y: number;
     }[][];
 }
-export const BarChart: React.FC<BarChartProps> = require('./BarChart');
 
+interface BackgroundColorProps extends BasicProps {
+    color: string;
+}
 export const BackgroundColor: React.FC<BackgroundColorProps> = require('./BackgroundColor');
 
+export const BarChart: React.FC<ChartProps> = require('./BarChart');
+
 interface BigNumberBoardProps extends BasicProps {
+    title: string;
     analytics: string;
 }
 export const BigNumberBoard: React.FC<BigNumberBoardProps> = require('./BigNumberBoard');
@@ -79,6 +80,8 @@ export const Input: React.FC<BasicProps> = require('./Input');
 
 export const Label: React.FC<BasicProps> = require('./Label');
 
+export const LineChart: React.FC<ChartProps> = require('./LineChart');
+
 interface LinkProps extends BasicProps {
     display: CSS.DisplayProperty;
     fontWeight: CSS.FontWeightProperty;
@@ -106,9 +109,11 @@ export const NumberBoard: React.FC<NumberBoardProps> = require('./NumberBoard');
 
 export const Pre: React.FC<BasicProps> = require('./Pre');
 
+export const RulesChart: React.FC<ChartProps> = require('./RulesChart');
+
 interface SectionTitleProps extends BasicProps {
     title: string;
-    description: string;
+    description?: React.ReactNode;
 }
 export const SectionTitle: React.FC<SectionTitleProps> = require('./SectionTitle');
 
@@ -121,8 +126,8 @@ export const SubHeader: React.FC<SubHeaderProps> = require('./SubHeader');
 export const Svg: React.FC<BasicProps> = require('./Svg');
 
 interface TextProps extends BasicProps {
-    uppercase: boolean;
-    inline: boolean;
+    uppercase?: boolean;
+    inline?: boolean;
 }
 export const Text: React.FC<TextProps> = require('./Text');
 
